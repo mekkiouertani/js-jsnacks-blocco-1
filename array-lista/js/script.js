@@ -18,9 +18,10 @@ const fruits = [
 ];
 //vediamo l'array sul console log
 console.log(fruits);
-
 //aggiungiamo la pesca all'array
 fruits.push('pesca');
 //verifichiamo se la pesca è stata inserita
 console.log(fruits);
+//aggiungiamo variabile booleana
+let founded = false;
 
