@@ -1,6 +1,9 @@
 body{
     background-color:burlywood;
 }
+input{
+    margin: 15px 0;
+}
 button{
     display: block;
 }

@@ -10,13 +10,20 @@ function getRndInteger(min, max) {
 }
 
 //prendiamo il value delle caselle input
-const nElement = document.getElementById('n-element').value;
-const nPrintElement = document.getElementById('n-print-element').value;
+
+const nPrintElement = document.getElementById('n-print-element');
 const button = document.querySelector('button');
+const casualNumbers = [];
+
+button.addEventListener('click', function(){
+    let nElement = document.getElementById('n-element').value;
+    console.log(nElement.value);
+
+    for (let i = 0; i < nElement; i++){
+        casualNumbers.push(getRndInteger(1, 100));
+        console.log(casualNumbers);
+        document.body.innerHTML += casualNumbers; 
+    }
+})
 
 
-
-//CONSOLE LOG
-console.log(nElement);
-console.log(nPrintElement);
-console.log(button);
