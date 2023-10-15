@@ -4,6 +4,10 @@
     //chiediamo all'utente quanti numeri vuole 
     //stampiamo gli ultimi 5 numeri
 
+//utility
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
 //prendiamo il value delle caselle input
 const nElement = document.getElementById('n-element').value;
