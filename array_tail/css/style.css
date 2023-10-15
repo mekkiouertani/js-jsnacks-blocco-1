@@ -6,4 +6,5 @@ input{
 }
 button{
     display: block;
+    margin-bottom: 20px;
 }
