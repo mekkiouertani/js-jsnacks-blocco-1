@@ -24,4 +24,17 @@ fruits.push('pesca');
 console.log(fruits);
 //aggiungiamo variabile booleana
 let founded = false;
-
+//verifichiamo che il cocomero sia dentro l'array
+for (let i = 0; i < fruits.length; i++){
+    if(fruits [i] == 'cocomero'){
+        founded = true;
+    }
+}
+//stampiamo il messaggio se trova il cocomero
+if(founded){
+    document.body.textContent += ('ci sta il cocomero');
+    console.log('ci sta il cocomero');
+} else{
+    document.body.textContent += ('non ci sta il cocomero');
+    console.log('non ci sta il cocomero');
+}
